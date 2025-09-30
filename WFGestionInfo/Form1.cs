@@ -16,5 +16,10 @@ namespace WFGestionInfo
         {
             InitializeComponent();
         }
+
+        private void timHora_Tick(object sender, EventArgs e)
+        {
+            labFecha.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
     }
 }

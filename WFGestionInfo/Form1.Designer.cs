@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -37,7 +39,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.pbFoto = new System.Windows.Forms.PictureBox();
+            this.labFecha = new System.Windows.Forms.Label();
+            this.ttDescripcion = new System.Windows.Forms.ToolTip(this.components);
+            this.timHora = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
+            this.tpVisual.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -83,16 +91,18 @@
             this.tpPreferen.Location = new System.Drawing.Point(4, 25);
             this.tpPreferen.Name = "tpPreferen";
             this.tpPreferen.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPreferen.Size = new System.Drawing.Size(1255, 462);
+            this.tpPreferen.Size = new System.Drawing.Size(1255, 453);
             this.tpPreferen.TabIndex = 1;
             this.tpPreferen.Text = "Preferencias";
             this.tpPreferen.UseVisualStyleBackColor = true;
             // 
             // tpVisual
             // 
+            this.tpVisual.Controls.Add(this.labFecha);
+            this.tpVisual.Controls.Add(this.pbFoto);
             this.tpVisual.Location = new System.Drawing.Point(4, 25);
             this.tpVisual.Name = "tpVisual";
-            this.tpVisual.Size = new System.Drawing.Size(1255, 462);
+            this.tpVisual.Size = new System.Drawing.Size(1255, 453);
             this.tpVisual.TabIndex = 2;
             this.tpVisual.Text = "Visualización";
             this.tpVisual.UseVisualStyleBackColor = true;
@@ -104,6 +114,7 @@
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
             this.button1.Text = "Guardar";
+            this.ttDescripcion.SetToolTip(this.button1, "Guardar cambios");
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -113,6 +124,7 @@
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
             this.button2.Text = "Limpiar";
+            this.ttDescripcion.SetToolTip(this.button2, "Limpiar formulario");
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -122,7 +134,34 @@
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 5;
             this.button3.Text = "Salir";
+            this.ttDescripcion.SetToolTip(this.button3, "Salir del formulario");
             this.button3.UseVisualStyleBackColor = true;
+            // 
+            // pbFoto
+            // 
+            this.pbFoto.Image = ((System.Drawing.Image)(resources.GetObject("pbFoto.Image")));
+            this.pbFoto.Location = new System.Drawing.Point(491, 72);
+            this.pbFoto.Name = "pbFoto";
+            this.pbFoto.Size = new System.Drawing.Size(316, 349);
+            this.pbFoto.TabIndex = 0;
+            this.pbFoto.TabStop = false;
+            this.ttDescripcion.SetToolTip(this.pbFoto, "Imagen de perfil");
+            // 
+            // labFecha
+            // 
+            this.labFecha.AutoSize = true;
+            this.labFecha.Location = new System.Drawing.Point(608, 41);
+            this.labFecha.Name = "labFecha";
+            this.labFecha.Size = new System.Drawing.Size(91, 16);
+            this.labFecha.TabIndex = 1;
+            this.labFecha.Text = "Fecha y hora: ";
+            this.ttDescripcion.SetToolTip(this.labFecha, "Hora actual");
+            // 
+            // timHora
+            // 
+            this.timHora.Enabled = true;
+            this.timHora.Interval = 1000;
+            this.timHora.Tick += new System.EventHandler(this.timHora_Tick);
             // 
             // Form1
             // 
@@ -138,6 +177,9 @@
             this.Name = "Form1";
             this.Text = "Gestión Avanzada de Información Personal";
             this.tabControl1.ResumeLayout(false);
+            this.tpVisual.ResumeLayout(false);
+            this.tpVisual.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,6 +196,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pbFoto;
+        private System.Windows.Forms.Label labFecha;
+        private System.Windows.Forms.ToolTip ttDescripcion;
+        private System.Windows.Forms.Timer timHora;
     }
 }
 
