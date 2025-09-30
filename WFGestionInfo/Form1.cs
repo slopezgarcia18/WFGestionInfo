@@ -16,5 +16,10 @@ namespace WFGestionInfo
         {
             InitializeComponent();
         }
+
+        private void btGuardar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(txtNombre.Text, "Información", MessageBoxButtons.OK);
+        }
     }
 }
