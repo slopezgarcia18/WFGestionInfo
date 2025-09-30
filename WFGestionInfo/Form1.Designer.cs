@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
@@ -63,7 +61,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.clbListaHobbies = new System.Windows.Forms.CheckedListBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -75,15 +72,6 @@
             this.tpPreferen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
 >>>>>>> feature/preferencias
-=======
-            this.pbFoto = new System.Windows.Forms.PictureBox();
-            this.labFecha = new System.Windows.Forms.Label();
-            this.ttDescripcion = new System.Windows.Forms.ToolTip(this.components);
-            this.timHora = new System.Windows.Forms.Timer(this.components);
-            this.tabControl1.SuspendLayout();
-            this.tpVisual.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
->>>>>>> feature/visualizacion
             this.SuspendLayout();
             // 
             // label1
@@ -156,8 +144,6 @@
             // 
             // tpVisual
             // 
-            this.tpVisual.Controls.Add(this.labFecha);
-            this.tpVisual.Controls.Add(this.pbFoto);
             this.tpVisual.Location = new System.Drawing.Point(4, 25);
             this.tpVisual.Name = "tpVisual";
             this.tpVisual.Size = new System.Drawing.Size(1255, 453);
@@ -167,7 +153,6 @@
             // 
             // btGuardar
             // 
-<<<<<<< HEAD
             this.btGuardar.Location = new System.Drawing.Point(519, 527);
             this.btGuardar.Name = "btGuardar";
             this.btGuardar.Size = new System.Drawing.Size(75, 23);
@@ -175,38 +160,18 @@
             this.btGuardar.Text = "Guardar";
             this.btGuardar.UseVisualStyleBackColor = true;
             this.btGuardar.Click += new System.EventHandler(this.btGuardar_Click);
-=======
-            this.button1.Location = new System.Drawing.Point(519, 527);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Guardar";
-            this.ttDescripcion.SetToolTip(this.button1, "Guardar cambios");
-            this.button1.UseVisualStyleBackColor = true;
->>>>>>> feature/visualizacion
             // 
             // btLimpiar
             // 
-<<<<<<< HEAD
             this.btLimpiar.Location = new System.Drawing.Point(680, 527);
             this.btLimpiar.Name = "btLimpiar";
             this.btLimpiar.Size = new System.Drawing.Size(75, 23);
             this.btLimpiar.TabIndex = 4;
             this.btLimpiar.Text = "Limpiar";
             this.btLimpiar.UseVisualStyleBackColor = true;
-=======
-            this.button2.Location = new System.Drawing.Point(680, 527);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Limpiar";
-            this.ttDescripcion.SetToolTip(this.button2, "Limpiar formulario");
-            this.button2.UseVisualStyleBackColor = true;
->>>>>>> feature/visualizacion
             // 
             // btSalir
             // 
-<<<<<<< HEAD
             this.btSalir.Location = new System.Drawing.Point(838, 527);
             this.btSalir.Name = "btSalir";
             this.btSalir.Size = new System.Drawing.Size(75, 23);
@@ -434,41 +399,6 @@
             this.label5.Size = new System.Drawing.Size(167, 16);
             this.label5.TabIndex = 6;
             this.label5.Text = "Valoración del servicio";
-=======
-            this.button3.Location = new System.Drawing.Point(838, 527);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Salir";
-            this.ttDescripcion.SetToolTip(this.button3, "Salir del formulario");
-            this.button3.UseVisualStyleBackColor = true;
->>>>>>> feature/visualizacion
-            // 
-            // pbFoto
-            // 
-            this.pbFoto.Image = ((System.Drawing.Image)(resources.GetObject("pbFoto.Image")));
-            this.pbFoto.Location = new System.Drawing.Point(491, 72);
-            this.pbFoto.Name = "pbFoto";
-            this.pbFoto.Size = new System.Drawing.Size(316, 349);
-            this.pbFoto.TabIndex = 0;
-            this.pbFoto.TabStop = false;
-            this.ttDescripcion.SetToolTip(this.pbFoto, "Imagen de perfil");
-            // 
-            // labFecha
-            // 
-            this.labFecha.AutoSize = true;
-            this.labFecha.Location = new System.Drawing.Point(608, 41);
-            this.labFecha.Name = "labFecha";
-            this.labFecha.Size = new System.Drawing.Size(91, 16);
-            this.labFecha.TabIndex = 1;
-            this.labFecha.Text = "Fecha y hora: ";
-            this.ttDescripcion.SetToolTip(this.labFecha, "Hora actual");
-            // 
-            // timHora
-            // 
-            this.timHora.Enabled = true;
-            this.timHora.Interval = 1000;
-            this.timHora.Tick += new System.EventHandler(this.timHora_Tick);
             // 
             // Form1
             // 
@@ -492,16 +422,10 @@
             this.panel.PerformLayout();
 =======
             this.tabControl1.ResumeLayout(false);
-<<<<<<< HEAD
             this.tpPreferen.ResumeLayout(false);
             this.tpPreferen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
 >>>>>>> feature/preferencias
-=======
-            this.tpVisual.ResumeLayout(false);
-            this.tpVisual.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
->>>>>>> feature/visualizacion
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -538,7 +462,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-<<<<<<< HEAD
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckedListBox clbListaHobbies;
         private System.Windows.Forms.Label label3;
@@ -547,12 +470,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox1;
 >>>>>>> feature/preferencias
-=======
-        private System.Windows.Forms.PictureBox pbFoto;
-        private System.Windows.Forms.Label labFecha;
-        private System.Windows.Forms.ToolTip ttDescripcion;
-        private System.Windows.Forms.Timer timHora;
->>>>>>> feature/visualizacion
     }
 }
 

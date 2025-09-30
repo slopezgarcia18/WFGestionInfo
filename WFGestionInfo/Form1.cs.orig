@@ -22,10 +22,10 @@ namespace WFGestionInfo
         {
             MessageBox.Show(txtNombre.Text, "Información", MessageBoxButtons.OK);
 =======
-        private void timHora_Tick(object sender, EventArgs e)
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            labFecha.Text = DateTime.Now.ToString("HH:mm:ss");
->>>>>>> feature/visualizacion
+
+>>>>>>> feature/preferencias
         }
     }
 }
